@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:background="#C61C1C"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginRight="100dp"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="안녕하세요"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:background="#C61C1C"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/black"
+        android:text="안녕!"
+        android:layout_margin="100dp"/>
+
+</LinearLayout>
