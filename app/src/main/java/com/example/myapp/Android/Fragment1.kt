@@ -41,6 +41,10 @@ class Fragment1:Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("Life Cycle","onActivityCreated")
+
+        val data = arguments?.getString("hello")
+        Log.d("data", data)
+
         super.onActivityCreated(savedInstanceState)
     }
 
