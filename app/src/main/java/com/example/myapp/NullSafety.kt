@@ -1,13 +1,11 @@
-package com.example.myapp.Android
+package com.example.myapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.myapp.R
 
 
-
-lateinit var lateCar :Car
+lateinit var lateCar : Car
 
 class Car(var number :Int){
 
@@ -19,7 +17,7 @@ class NullSafety : AppCompatActivity() {
         setContentView(R.layout.activity_null_safety)
         ////
         lateCar = Car(10) //lateinit인 경우 사용전에 반드시 초기화를 해야합니다.
-        Log.d("number","late number : "+lateCar.number) //lateinit 비추합니다.
+        Log.d("number","late number : "+ lateCar.number) //lateinit 비추합니다.
         ////
 
         val number: Int = 10

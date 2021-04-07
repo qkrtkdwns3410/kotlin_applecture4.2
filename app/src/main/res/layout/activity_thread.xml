@@ -5,10 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".resource">
+    tools:context=".Thread">
 
     <Button
+        android:id="@+id/button"
         android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="#81CA2E" />
+        android:layout_height="100dp"/>
+
+
+
 </LinearLayout>

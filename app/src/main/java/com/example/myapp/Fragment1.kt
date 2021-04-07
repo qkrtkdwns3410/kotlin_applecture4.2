@@ -1,4 +1,4 @@
-package com.example.myapp.Android
+package com.example.myapp
 
 import android.content.Context
 import android.os.Bundle
@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.myapp.R
 import kotlinx.android.synthetic.main.fragment_one.*
 
 

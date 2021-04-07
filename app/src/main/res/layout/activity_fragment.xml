@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Android.FragmentActivity">
+    tools:context=".FragmentActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
 
 <!--    <fragment-->
 <!--        android:id="@+id/frag1"-->
-<!--        android:name="com.example.myapp.Android.Fragment1"-->
+<!--        android:name="com.example.myapp.Fragment1"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="300dp" />-->
 

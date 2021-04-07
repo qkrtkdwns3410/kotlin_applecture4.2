@@ -1,4 +1,4 @@
-package com.example.myapp.Android
+package com.example.myapp
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity

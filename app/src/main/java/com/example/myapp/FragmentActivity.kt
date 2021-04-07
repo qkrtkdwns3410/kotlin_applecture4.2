@@ -1,10 +1,9 @@
-package com.example.myapp.Android
+package com.example.myapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.FragmentManager
-import com.example.myapp.R
 import kotlinx.android.synthetic.main.activity_fragment.*
 
 class FragmentActivity : AppCompatActivity() {
