@@ -4,13 +4,16 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.annotation.RequiresApi
 import com.example.myapp.R
+import com.example.myapp.R.*
 import kotlinx.android.synthetic.main.activity_internet_view.*
 
 class resource : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_resource)
+        setContentView(layout.activity_resource)
 
 
 
@@ -24,15 +27,9 @@ class resource : AppCompatActivity() {
 
 
         //SDK버전에 따른 분기 처리
-        val color = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) { //minimum sdk level
+        val color =btn1.setBackgroundColor(getColor(color.TextViewColor))
 
-            btn1.setBackgroundColor(getColor(R.color.TextViewColor))
 
-        } else {
-
-            btn1.setBackgroundColor(resources.getColor(R.color.TextViewColor))
-
-        }
 
 
     }
