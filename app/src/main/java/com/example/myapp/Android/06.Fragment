@@ -27,6 +27,9 @@ Fragment
 -XML에 ViewComponent로 추가한다.
 -코드로 (동적)으로 추가한다.
 
+데이터 전달 방법
+-액티비티 >> 프라그먼트 : argument 와 bundle
+- Fragment >> 액팉비티 : 자체 구현
 
 
 

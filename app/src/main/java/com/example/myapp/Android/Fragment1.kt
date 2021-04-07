@@ -8,12 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.myapp.R
+import kotlinx.android.synthetic.main.fragment_one.*
 
 
 class Fragment1:Fragment(){
+    interface OnDataPassListener {
+        fun onDataPass(data:String)
+
+    }
+    lateinit var dataPassListener: OnDataPassListener
+
+
+
+
+
     override fun onAttach(context: Context) {
         Log.d("Life Cycle","onAttach")
         super.onAttach(context)
+        dataPassListener =context as OnDataPassListener
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,13 +49,18 @@ class Fragment1:Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         Log.d("Life Cycle","onViewCreated")
         super.onViewCreated(view, savedInstanceState)
+        //액티비티의 oncreate에서 했던 작업을 여기에서 한다
+
+        pass.setOnClickListener {
+            dataPassListener.onDataPass("Good Bye")
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         Log.d("Life Cycle","onActivityCreated")
 
         val data = arguments?.getString("hello")
-        Log.d("data", data)
+        data?.let { Log.d("data", it) }
 
         super.onActivityCreated(savedInstanceState)
     }
